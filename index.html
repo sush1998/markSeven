@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Translate app</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav>
+        <p>Translation app</p>
+    </nav>
+
+    <div class="main-container">
+        <div class="input-container">
+            <img src="images/Translation-icon.png">
+            <textarea id="input-feild" placeholder="Enter the text here to get translation !"></textarea>
+            <button id="btn-translate">Translate</button>
+        </div>
+        <div class="output-container">
+            <div id="errorMsg">
+
+            </div>
+            <div id="correctOutput">
+                <div clss="morse-code">
+                    <p>Morse Code :</p>
+                    <!-- <div id="output-morse">.... . .-.. .-.. ---     ..     .- --     ... ..- ... .... .- -. - </div> -->
+                    <textarea id="output-morse" placeholder="Translated Morse Code of Text is printed here"></textarea>
+                </div>
+                <div clss="morse-code">
+                    <p>Braille Code :</p>
+                    <textarea id="output-braille" placeholder="Translated Braille Code of Text is printed here"></textarea>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-link">
+            <li><a href="https://funtranslations.com/api/morse">Morse code API</a></li>
+            <li><a href="https://funtranslations.com/api/braille">Braille code API</a></li>
+            <li><a href="https://github.com/sush1998/markSix">View Code</a></li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
