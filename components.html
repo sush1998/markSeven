@@ -18,13 +18,30 @@
             <button id="btn-translate">Translate</button>
         </div>
         <div class="output-container">
-            <textarea id="output"></textarea>
-            <textarea id="output"></textarea>
+            <div id="errorMsg">
+
+            </div>
+            <div id="correctOutput">
+                <div clss="morse-code">
+                    <p>Morse Code</p>
+                    <!-- <div id="output-morse">.... . .-.. .-.. ---     ..     .- --     ... ..- ... .... .- -. - </div> -->
+                    <textarea id="output-morse"></textarea>
+                </div>
+                <div clss="morse-code">
+                    <p>Braille Code</p>
+                    <textarea id="output-braille"></textarea>
+                </div>
+            </div>
+            
         </div>
     </div>
     <footer>
-        <p>Link</p>
+        <ul class="footer-link">
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
     </footer>
-    <script src="translate.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
