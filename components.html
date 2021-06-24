@@ -13,18 +13,35 @@
     </nav>
     <div class="main-container">
         <div class="input-container">
-            <img src="images/Minion-Hello-icon.png">
+            <img src="images/Translation-icon.png">
             <textarea id="input-feild"></textarea>
             <button id="btn-translate">Translate</button>
         </div>
         <div class="output-container">
-            <textarea id="output"></textarea>
-            <textarea id="output"></textarea>
+            <div id="errorMsg">
+
+            </div>
+            <div id="correctOutput">
+                <div clss="morse-code">
+                    <p>Morse Code</p>
+                    <!-- <div id="output-morse">.... . .-.. .-.. ---     ..     .- --     ... ..- ... .... .- -. - </div> -->
+                    <textarea id="output-morse"></textarea>
+                </div>
+                <div clss="morse-code">
+                    <p>Braille Code</p>
+                    <textarea id="output-braille"></textarea>
+                </div>
+            </div>
+            
         </div>
     </div>
     <footer>
-        <p>Link</p>
+        <ul class="footer-link">
+            <li><a href="https://funtranslations.com/api/morse">Morse code API</a>></li>
+            <li><a href="https://funtranslations.com/api/braille">Braille code API</a></li>
+            <li><a href="https://github.com/sush1998/markSix">View Code</a></li>
+        </ul>
     </footer>
-    <script src="translate.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
